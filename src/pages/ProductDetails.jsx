@@ -23,6 +23,10 @@ const ProductDetails = () => {
       <img src={apiData.image} alt="" />
       <p className="bg-green-400 w-fit">⭐{apiData?.rating?.rate}</p>
       <p className="bg-violet-500 w-fit">${apiData.price}</p>
+      <p className="bg-violet-500 w-fit">${apiData.price}</p>
+      <div className="float-right ">
+        <p>{apiData.description}</p>
+      </div>
     </div>
   );
 };

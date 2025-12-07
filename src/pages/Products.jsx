@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
+
 const Products = () => {
     const [apiData, setApiData] = useState([]);
    
@@ -58,12 +59,16 @@ const Products = () => {
           </p>
           <p className='text-gray-500'>({item.rating.count})</p>
         </div>
-
+      <Link to="/cart">
         <button className='mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition'>
           Add to Cart
         </button>
+        
+
+        </Link>
       </div>
       </Link>
+      
     ))}
   </div>
 </div>
