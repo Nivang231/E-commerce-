@@ -29,13 +29,13 @@ const Products = () => {
     //         ))}
     //     </div>
     // </div>
-    <div className='p-5'>
+    <div className='p-5 bg-rose-100'>
   <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>
     {apiData.map((item, index) => (
         <Link to={`/products/${item.id}`}>
       <div
         key={index}
-        className='bg-white shadow-md hover:shadow-xl transition-all duration-300 rounded-xl p-4 border border-gray-200 hover:-translate-y-1'
+        className='bg-rose-300 shadow-md hover:shadow-xl transition-all duration-300 rounded-xl p-4 border border-gray-200 hover:-translate-y-1'
       >
         <div className='w-full aspect-square overflow-hidden rounded-lg'>
           <img
@@ -49,7 +49,7 @@ const Products = () => {
           {item.title}
         </p>
 
-        <p className='text-lg font-bold text-blue-600 mt-1'>
+        <p className='text-lg font-bold text-rose-800 mt-1'>
           ${item.price}
         </p>
 
@@ -60,7 +60,7 @@ const Products = () => {
           <p className='text-gray-500'>({item.rating.count})</p>
         </div>
       <Link to="/cart">
-        <button className='mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition'>
+        <button className='mt-4 w-full bg-rose-600 text-white py-2 rounded-lg hover:bg-rose-900 transition'>
           Add to Cart
         </button>
         
